@@ -4522,7 +4522,7 @@ List of 300 VueJS Interview Questions
      <p>{{ $tc('friend', 0) }}</p>
      <p>{{ $tc('friend', 1) }}</p>
      const count = { count: 10 }
-     <p>{{ $tc('friend', 10, count}) }}</p>
+     <p>{{ $tc('friend', 10, count) }}</p>
      ```
      Finally it outputs the result as below
      ```javascript
