@@ -4425,7 +4425,8 @@ List of 300 VueJS Interview Questions
          ```
          **Note:** It also accepts array-like object
          ```javascript
-         <p>{{ $t('message.greeting', {'0': 'Good'}) }}</p>
+         const data = {'0': 'Good'}
+         <p>{{ $t('message.greeting', data) }}</p>
          ```
      3. **HTML formatting:** This formatting is required when want to render your translation as an HTML message and not a static string.
          ```javascript
@@ -4459,7 +4460,8 @@ List of 300 VueJS Interview Questions
          ```
          After that pass argument with key similar to named formatting
          ```javascript
-         <p>{{ $t('message.greeting', { msg: 'Good' }) }}</p>
+         const data = { msg: 'Good' }
+         <p>{{ $t('message.greeting', data) }}</p>
          ```
          Finally it renders the output as below,
          ```javascript
@@ -4519,7 +4521,8 @@ List of 300 VueJS Interview Questions
 
      <p>{{ $tc('friend', 0) }}</p>
      <p>{{ $tc('friend', 1) }}</p>
-     <p>{{ $tc('friend', 10, { count: 10 }) }}</p>
+     const count = { count: 10 }
+     <p>{{ $tc('friend', 10, count}) }}</p>
      ```
      Finally it outputs the result as below
      ```javascript
