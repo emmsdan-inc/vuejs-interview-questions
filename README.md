@@ -4398,7 +4398,8 @@ List of 300 VueJS Interview Questions
          ```
          After that pass argument value along with key in the template
          ```javascript
-         `<p>{{ $t('message.greeting', { msg: 'Good' }) }}</p>`
+         const data = { msg: 'Good' }
+         <p>{{ $t('message.greeting', data) }} </p>
          ```
          It outputs the result as below,
          ```javascript
